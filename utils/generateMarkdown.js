@@ -4,15 +4,30 @@ function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let link;
+  if (license === "MIT License"){
+    link = "https://choosealicense.com/licenses/mit/";
+  } else if (license === "Apache License 2.0"){
+    link = "https://choosealicense.com/licenses/apache-2.0/";
+  } else if (license === "Mozilla Public License 2.0"){
+    link = "https://choosealicense.com/licenses/mpl-2.0/";
+  } else {
+    link = "https://choosealicense.com/licenses/lgpl-3.0/";
+  }
+  return `[${renderLicenseBadge(license)}](${link})`
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+return `${renderLicenseLink(license)}`
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${renderLicenseSection(data.license)}
 
 ## Description
 ${data.description}
@@ -32,8 +47,8 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## License 
-${data.license} 
+## License
+This application is covered under ${data.license}.
 
 ## Contributing
 ${data.contributing}

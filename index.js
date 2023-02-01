@@ -40,14 +40,17 @@ const questions = [
     },
 
     {
-        type: "input", //Must be a list to choose from. Addds badge to the topt of ReadMe. Description is added under "description"
-        name: "License",
+        type: "list", 
+        choices: ["MIT License", "Apache License 2.0", "Mozilla Public License 2.0", "GNU LGPL v3"],
+        
+        //Must be a list to choose from. Addds badge to the topt of ReadMe. Description is                    added under "description"
+        name: "license",
         message: "What license are you using? A badge and description will be provided."
     },
 
     {
         type: "input",
-        name: "Contributing",
+        name: "contributing",
         message: "Please enter contributing information."
     },
 
@@ -74,8 +77,6 @@ const questions = [
         name: "emailaddress",
         message: "What is your email address?" // This must be added to the questions section, with insturcitons on how to reach the user with additional questions
     }
-
-
 
 ];
 
