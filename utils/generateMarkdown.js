@@ -25,7 +25,28 @@ ${data.description}
 * Contributing
 * Tests
 * Questions
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License 
+${data.license} 
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+${data.questions}
 `;
 }
+
+
+//my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 module.exports = generateMarkdown;
