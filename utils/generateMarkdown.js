@@ -38,13 +38,13 @@ ${renderLicenseSection(data.license)}
 ${data.description}
 
 ## Table of Contents
-* Description
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 ${data.installation}
@@ -65,7 +65,7 @@ ${data.tests}
 ${data.questions}
 </br>
 Please direct all inquires to: <a href="mailto:${data.emailaddress}">${data.emailaddress}</a></br>
-Please see my GitHub profile here: <a href="https://github.com/${data.githubusename}"></a>  
+Please see my GitHub profile here: <a href="https://github.com/${data.githubusername}">${data.githubusername}</a>  
 `;
 }
 

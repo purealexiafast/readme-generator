@@ -11,6 +11,5 @@ The assignment was to create a backend application that generates a ReadMe docum
 <img src="readme-pic.jpg" alt="ReadMe generator">
 
 
-## See link to deployed website below
+## See link tovideo walkthrough below
 
-https://purealexiafast.github.io/readme-generator/
