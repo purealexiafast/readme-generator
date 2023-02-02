@@ -43,7 +43,7 @@ const questions = [
         type: "list", 
         choices: ["MIT License", "Apache License 2.0", "Mozilla Public License 2.0", "GNU LGPL v3", "none"],
         
-        //Must be a list to choose from. Addds badge to the topt of ReadMe. Description is                    added under "description"
+        //Must be a list to choose from. Addds badge to the topt of ReadMe. Description is added under "description"
         name: "license",
         message: "What license are you using? A badge and description will be provided."
     },
@@ -97,7 +97,7 @@ function init() {
     console.log(answers)
     const markdownData = generateMarkdown(answers);
     console.log(markdownData);
-    writeToFile("readmeGenerated", markdownData)
+    writeToFile("SampleReadMe", markdownData)
 
   })
   .catch((error) => {
@@ -112,25 +112,4 @@ function init() {
 // Function call to initialize app
 init();
 
-//function to generate links on table of contents
-/*
-function tabelOfContents() {
-                  
-    // Create anchor element.
-    const a = document.createElement('a'); 
-      
-    // Create the text node for anchor element.
-    //var link = document.createTextNode("#description");
-      
-    // Append the text node to anchor element.
-    a.appendChild("#description"); 
-      
-    // Set the title.
-    //a.title = "This is Link"; 
-      
-    // Set the href property.
-    a.href = "#descriptionTitle"; 
-      
-    // Append the anchor element to the body.
-    document.body.appendChild(a); 
-} tabelOfContents()*/
+

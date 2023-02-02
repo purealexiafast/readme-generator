@@ -11,5 +11,5 @@ The assignment was to create a backend application that generates a ReadMe docum
 <img src="readme-pic.jpg" alt="ReadMe generator">
 
 
-## See link tovideo walkthrough below
+## See link to video walkthrough below
 
