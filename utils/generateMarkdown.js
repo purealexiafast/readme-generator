@@ -1,6 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  return `![${license}](https://img.shields.io/badge/License-${encodeURIComponent(license)}-blue)` //encode turns it into a url encoded version // %20 is the url version of a space
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -12,8 +15,10 @@ function renderLicenseLink(license) {
     link = "https://choosealicense.com/licenses/apache-2.0/";
   } else if (license === "Mozilla Public License 2.0"){
     link = "https://choosealicense.com/licenses/mpl-2.0/";
-  } else {
+  } else if (license === "GNU LGPL v3") {
     link = "https://choosealicense.com/licenses/lgpl-3.0/";
+  } else {
+    return "";
   }
   return `[${renderLicenseBadge(license)}](${link})`
 }
@@ -29,7 +34,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseSection(data.license)}
 
-## Description
+## Description 
 ${data.description}
 
 ## Table of Contents
@@ -58,10 +63,10 @@ ${data.tests}
 
 ## Questions
 ${data.questions}
+</br>
+Please direct all inquires to: <a href="mailto:${data.emailaddress}">${data.emailaddress}</a></br>
+Please see my GitHub profile here: <a href="https://github.com/${data.githubusename}"></a>  
 `;
 }
-
-
-//my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 module.exports = generateMarkdown;
