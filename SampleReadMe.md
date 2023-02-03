@@ -1,8 +1,8 @@
-# Weather Dashboard
+# Alexia Fast Weather Dashboard
 [![Apache License 2.0](https://img.shields.io/badge/License-Apache%20License%202.0-blue)](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Description 
-The assignment was to create a weather dashboard that features today's weather as well as the upcoming 5 days of weather. The user can input what city they would like to see the weather in and it will display accurately.
+It is a weather Dashboard.
 
 ## Table of Contents
 * [Description](#description)
@@ -14,22 +14,22 @@ The assignment was to create a weather dashboard that features today's weather a
 * [Questions](#questions)
 
 ## Installation
-I installed this application using ------
+It was installed using ----
 
 ## Usage
-The usage information for this ReadMe is ------
+The usage was -----
 
 ## License
 This application is covered under Apache License 2.0.
 
 ## Contributing
-I had 2 contributors. Alex Jacobs and Selena Farley.
+The contributors were Alex and Sarah.
 
 ## Tests
-I tested this application using ----
+Test -----
 
 ## Questions
-If you have any questions please feel free to contact me.
+Please contact me.
 </br>
-Please direct all inquires to: <a href="mailto:alexiafastfilm@gmail.com">alexiafastfilm@gmail.com</a></br>
+Please direct all inquires to: <a href="mailto:email">email</a></br>
 Please see my GitHub profile here: <a href="https://github.com/purealexiafast">purealexiafast</a>  
